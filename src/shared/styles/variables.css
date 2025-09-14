@@ -1,0 +1,17 @@
+:root {
+  --font-family: 'Nunito Sans', sans-serif;
+  --font-weight: 400;
+  --font-size: 40px;
+
+  --background-color: #2e2c2b;
+
+  --main-text: #f0f0f0;
+  --accent-color: #d26b28;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
