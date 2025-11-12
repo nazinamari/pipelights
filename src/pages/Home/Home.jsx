@@ -1,26 +1,5 @@
-import { Link } from 'react-router-dom';
+import Hero from '../../components/Hero/Hero';
 
 export default function Home() {
-  return (
-    <div>
-      <h1>HANDCRAFTED LAMPS & FURNITURE</h1>
-      <ul>
-        {/* <li>
-          <h2>
-            <Link to="/catalog">Catalog</Link>
-          </h2>
-        </li>
-        <li>
-          <h2>
-            <Link to="/collections">Collections</Link>
-          </h2>
-        </li>
-        <li>
-          <h2>
-            <Link to="/photography">Photography</Link>
-          </h2>
-        </li> */}
-      </ul>
-    </div>
-  );
+  return <Hero />;
 }
