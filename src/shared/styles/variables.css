@@ -4,9 +4,35 @@
   --font-size: 40px;
 
   --background-color: #2e2c2b;
+  --accent-section: #0f0f0f;
+  --footer: #1a1a1a;
 
   --main-text: #f0f0f0;
   --accent-color: #d26b28;
+
+  /* Primary */
+  --btn-reset: #d26b28;
+  --btn-hover: #e07934;
+  --btn-pressed: #8e3e10;
+  --btn-focused: #c65f1c;
+  --btn-active: #a54d14;
+  --btn-disabled: #2e2c2b;
+
+  /* Default */
+  --btn-deflt-reset: #d26b28;
+  --btn-deflt-hover: rgba(224, 121, 52, 0.2);
+  --btn-deflt-pressed: rgba(142, 62, 16, 0.2);
+  --btn-deflt-focused: rgba(224, 121, 52, 0.2);
+  --btn-deflt-active: #a54d14;
+  --btn-deflt-disabled: #888888;
+
+  /* Link */
+  --btn-link-reset: #c65f1c;
+  --btn-link-hover: #e07934;
+  --btn-link-pressed: #8e3e10;
+  --btn-link-focused: #c65f1c;
+  --btn-link-active: #a54d14;
+  --btn-link-disabled: #2e2c2b;
 
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
