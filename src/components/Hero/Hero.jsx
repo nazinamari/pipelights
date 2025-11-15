@@ -7,13 +7,15 @@ export default function Hero() {
     console.log('Primary button clicked!');
   };
 
-  // обробник для submit кнопки у формі
   const handleSubmit = (e) => {
-    e.preventDefault(); // щоб форма не перезавантажувала сторінку
+    e.preventDefault();
     console.log('Form submitted!');
   };
 
-  // обробник для кнопки-link
+  const handleDefaultClick = () => {
+    console.log('Default click');
+  };
+
   const handleLinkClick = () => {
     console.log('Link button clicked!');
   };
@@ -28,24 +30,28 @@ export default function Hero() {
             bulbs
           </p>
         </div>
-        {/* Primary button для UI */}
+
+        {/* Primary (звичайна кнопка) */}
         <Button variant="primary" onClick={handleClick}>
           Click me
         </Button>
 
-        {/* Primary button як submit у формі */}
         <form onSubmit={handleSubmit}>
           <Button variant="primary" type="submit">
             Submit form
           </Button>
         </form>
 
-        {/* Default button */}
-        <Button variant="default">Default</Button>
+        <Button variant="default" onClick={handleDefaultClick}>
+          Default
+        </Button>
 
-        {/* Link-style button */}
         <Button variant="link" onClick={handleLinkClick}>
           Go to page
+        </Button>
+
+        <Button variant="primary" disabled={true} onClick={handleDefaultClick}>
+          Default
         </Button>
       </Container>
     </section>

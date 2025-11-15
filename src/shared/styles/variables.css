@@ -16,7 +16,9 @@
   --btn-pressed: #8e3e10;
   --btn-focused: #c65f1c;
   --btn-active: #a54d14;
-  --btn-disabled: #2e2c2b;
+
+  --btn-disabled-dark: #2e2c2b;
+  --btn-disabled-light: #888888;
 
   /* Default */
   --btn-deflt-reset: #d26b28;
@@ -24,7 +26,6 @@
   --btn-deflt-pressed: rgba(142, 62, 16, 0.2);
   --btn-deflt-focused: rgba(224, 121, 52, 0.2);
   --btn-deflt-active: #a54d14;
-  --btn-deflt-disabled: #888888;
 
   /* Link */
   --btn-link-reset: #c65f1c;
