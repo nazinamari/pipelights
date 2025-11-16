@@ -50,7 +50,7 @@ export default function Hero() {
           Go to page
         </Button>
 
-        <Button variant="primary" disabled={true} onClick={handleDefaultClick}>
+        <Button variant="link" active={true} onClick={handleDefaultClick}>
           Default
         </Button>
       </Container>
