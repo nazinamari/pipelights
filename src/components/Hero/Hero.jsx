@@ -10,16 +10,17 @@ export default function Hero() {
   return (
     <section className={css.hero}>
       <Container>
-        <div className={css.hero__wrapper}>
-          <h1 className={css.title}>HANDCRAFTED LAMPS & FURNITURE</h1>
-          <div className={css.hero__description_wrapper}>
-            <p className={css.description}>
-              Handmade lamps and furniture from pipes or old cameras with Edison
-              bulbs
-            </p>
+        <div className={css.hero__inner}>
+          <h1 className={css.hero__title}>HANDCRAFTED LAMPS & FURNITURE</h1>
+          <div className={css.hero__info}>
             <Button variant="primary" onClick={handleClick}>
               View our works
             </Button>
+            <p className={css.hero__description}>
+              Handmade lamps and furniture from pipes
+              <br />
+              or old cameras with Edison bulbs
+            </p>
           </div>
         </div>
       </Container>

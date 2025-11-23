@@ -2,10 +2,6 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
   background-image:
     linear-gradient(rgba(17, 14, 14, 0.45), rgba(17, 14, 14, 0.45)),
     url('/images/mobile/mob-hero.jpg');
@@ -16,21 +12,32 @@
   padding: 0;
 }
 
-.hero__wrapper {
+.hero__inner {
   padding-top: 300px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.title {
+.hero__title {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 64px;
+  line-height: 80px;
   letter-spacing: 2px;
   color: var(--accent-color);
   text-transform: uppercase;
 }
 
-.description {
+.hero__info {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero__description {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -46,14 +53,24 @@
       url('/images/tablet/tablet-hero.jpg');
   }
 
-  .hero__wrapper {
-    padding-top: 404px;
+  .hero__inner {
+    padding-top: 600px;
   }
 
-  .title {
+  .hero__title {
     font-size: 80px;
     line-height: 96px;
     letter-spacing: 3px;
+  }
+
+  .hero__info {
+    margin-top: 40px;
+    gap: 32px;
+  }
+
+  .hero__description {
+    font-size: 28px;
+    line-height: 44px;
   }
 }
 
@@ -64,22 +81,23 @@
       url('/images/desktop/desktop-hero.jpg');
   }
 
-  .hero__wrapper {
-    padding-top: 832px;
+  .hero__inner {
+    padding-top: 680px;
   }
 
-  .title {
+  .hero__title {
     font-size: 128px;
     line-height: 136px;
     letter-spacing: 3px;
   }
 
-  .hero__description_wrapper {
-    display: flex;
-    flex-direction: row;
+  .hero__info {
+    margin-top: 48px;
+    gap: 40px;
   }
-  .description {
+
+  .hero__description {
     font-size: 40px;
-    font-weight: 54px;
+    line-height: 56px;
   }
 }

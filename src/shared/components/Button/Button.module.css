@@ -12,6 +12,7 @@
   cursor: pointer;
   /* text-transform: uppercase; */
   text-transform: capitalize;
+  white-space: nowrap;
 
   /* box-shadow: 0 4px 8px 0 rgba(94, 45, 13, 0.25); */
 
