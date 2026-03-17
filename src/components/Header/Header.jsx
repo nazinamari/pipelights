@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import css from './Header.module.css';
 import Container from '../../shared/components/Container/Container';
+import Logo from '../Logo/Logo';
 
 export default function Header({ onClick, isTabletOrDesktop }) {
   const menuItems = [
@@ -13,7 +14,7 @@ export default function Header({ onClick, isTabletOrDesktop }) {
   return (
     <header className={css.header}>
       <Container>
-        <div>Logo</div>
+        <Logo />
         {isTabletOrDesktop && (
           <nav>
             {menuItems.map((item) => (
