@@ -1,5 +1,5 @@
 body {
-  font-family: var(--font-family);
+  font-family: var(--nunito);
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   color: var(--main-text);
@@ -43,4 +43,8 @@ ul li {
 
 * {
   box-sizing: border-box; /* Включає padding і border в загальну ширину */
+}
+
+a {
+  text-decoration: none;
 }

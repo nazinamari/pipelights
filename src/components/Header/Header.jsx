@@ -3,7 +3,7 @@ import css from './Header.module.css';
 import Container from '../../shared/components/Container/Container';
 import Logo from '../Logo/Logo';
 
-export default function Header({ onClick, isTabletOrDesktop }) {
+export default function Header({ onClick, isDesktop }) {
   const menuItems = [
     { name: 'Catalog', path: '/catalog' },
     { name: 'Collections', path: '/collections' },
@@ -14,22 +14,24 @@ export default function Header({ onClick, isTabletOrDesktop }) {
   return (
     <header className={css.header}>
       <Container>
-        <Logo />
-        {isTabletOrDesktop && (
-          <nav>
-            {menuItems.map((item) => (
-              <Link key={item.name} to={item.path} className={css.link}>
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-        )}
+        <div className={css.inner}>
+          <Logo />
+          {isDesktop && (
+            <nav className={css.nav}>
+              {menuItems.map((item) => (
+                <Link key={item.name} to={item.path} className={css.link}>
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          )}
 
-        {!isTabletOrDesktop && (
-          <button type="button" onClick={onClick} className={css.burger}>
-            ☰
-          </button>
-        )}
+          {!isDesktop && (
+            <button type="button" onClick={onClick} className={css.burger}>
+              ☰
+            </button>
+          )}
+        </div>
       </Container>
     </header>
   );

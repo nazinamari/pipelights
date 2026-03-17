@@ -15,11 +15,13 @@
 
 @media screen and (min-width: 744px) {
   .logo {
+    white-space: nowrap;
+    font-family: var(--oswald);
     display: block;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 64px;
-    letter-spacing: 0.64px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0.7px;
     text-transform: capitalize;
     color: var(--accent-color);
   }
@@ -29,11 +31,5 @@
   .img {
     width: 66px;
     height: 66px;
-  }
-
-  .logo {
-    font-size: 48px;
-    line-height: 64px;
-    letter-spacing: 0.5px;
   }
 }

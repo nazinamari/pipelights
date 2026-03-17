@@ -9,8 +9,8 @@ export default function SharedLayout() {
 
   const sidebarRef = useRef(null);
 
-  const isTabletOrDesktop = useMediaQuery({
-    query: '(min-width: 768px)',
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1440px)',
   });
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function SharedLayout() {
         onClick={() => {
           setIsOpen(true);
         }}
-        isTabletOrDesktop={isTabletOrDesktop}
+        isDesktop={isDesktop}
       />
       {isOpen && (
         <div ref={sidebarRef}>
