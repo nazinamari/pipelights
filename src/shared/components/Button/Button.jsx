@@ -2,7 +2,7 @@ import css from './Button.module.css';
 
 export default function Button({
   children,
-  variant = 'primary', // primary | default | link
+  variant = 'primary', // primary | secondary | link
   type = 'button', // button | submit | reset
   disabled = false,
   active = false,

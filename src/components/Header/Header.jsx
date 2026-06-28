@@ -5,6 +5,7 @@ import Logo from '../Logo/Logo';
 
 export default function Header({ onClick, isDesktop }) {
   const menuItems = [
+    { name: 'Home', path: '/' },
     { name: 'Catalog', path: '/catalog' },
     { name: 'Collections', path: '/collections' },
     { name: 'About', path: '/about' },

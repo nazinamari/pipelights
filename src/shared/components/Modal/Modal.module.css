@@ -9,9 +9,9 @@
 
 .iClose {
   fill: none;
-  stroke: var(--main-text-color);
+  stroke: var(--main-text);
 }
 
 .iClose:hover {
-  stroke: var(--accent-hover-color);
+  stroke: var(--cooper);
 }
