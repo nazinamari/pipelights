@@ -2,6 +2,8 @@ export default function Sidebar({ close }) {
   return (
     <aside
       style={{
+        zIndex: 100,
+        color: 'red',
         position: 'fixed',
         top: 0,
         left: 0,

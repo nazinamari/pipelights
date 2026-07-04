@@ -1,49 +1,58 @@
 import { Outlet } from 'react-router-dom';
-import Header from '../Header/Header';
 import { useEffect, useRef, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+
+import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 
 export default function SharedLayout() {
   const [isOpen, setIsOpen] = useState(false);
-
   const sidebarRef = useRef(null);
 
   const isDesktop = useMediaQuery({
     query: '(min-width: 1440px)',
   });
 
-  useEffect(() => {
-    function handleClickOutside(e) {
-      if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-        setIsOpen(false);
-      }
-    }
+  const toggleSidebar = () => {
+    setIsOpen((prev) => !prev);
+  };
 
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+  const closeSidebar = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    if (isDesktop) {
+      closeSidebar();
     }
+  }, [isDesktop]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleClickOutside = (e) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+        closeSidebar();
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, [isOpen]);
 
   return (
     <>
-      <Header
-        onClick={() => {
-          setIsOpen(true);
-        }}
-        isDesktop={isDesktop}
-      />
+      <Header onClick={toggleSidebar} isDesktop={isDesktop} />
+
       {isOpen && (
         <div ref={sidebarRef}>
-          <Sidebar close={() => setIsOpen(false)} />
+          <Sidebar close={closeSidebar} />
         </div>
       )}
+
       <Outlet />
     </>
   );

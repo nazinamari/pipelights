@@ -20,15 +20,21 @@ export default function Header({ onClick, isDesktop }) {
           {isDesktop && (
             <nav className={css.nav}>
               {menuItems.map((item) => (
-                <Link key={item.name} to={item.path} className={css.link}>
+                <Link key={item.name} to={item.path} className={css.nav__link}>
                   {item.name}
                 </Link>
               ))}
             </nav>
           )}
-
           {!isDesktop && (
-            <button type="button" onClick={onClick} className={css.burger}>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onClick();
+              }}
+              className={css.burger}
+            >
               ☰
             </button>
           )}
