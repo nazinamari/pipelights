@@ -3,7 +3,7 @@ body {
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   color: var(--main-text);
-  background-color: var(--background-color);
+  background-color: var(--background);
 }
 
 button {

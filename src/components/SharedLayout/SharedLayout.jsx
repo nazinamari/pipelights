@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
+import Footer from '../Footer/Footer';
 
 export default function SharedLayout() {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,6 +55,7 @@ export default function SharedLayout() {
       )}
 
       <Outlet />
+      <Footer />
     </>
   );
 }

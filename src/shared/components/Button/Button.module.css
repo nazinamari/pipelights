@@ -21,7 +21,7 @@
 
 /* Primary */
 .btn-primary {
-  background-color: var(--cooper);
+  background-color: var(--copper);
   color: var(--main-text);
   box-shadow: 0 4px 8px 0 rgba(94, 45, 13, 0.25);
 }
@@ -41,7 +41,7 @@
     inset 0 0 0 4px var(--main-text);
 }
 .btn-primary.active {
-  background-color: var(--cooper);
+  background-color: var(--copper);
   box-shadow:
     0 4px 8px 0 rgba(94, 45, 13, 0.25),
     inset 0 4px 20px 4px var(--primary-pressed);
