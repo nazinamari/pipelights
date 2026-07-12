@@ -35,15 +35,16 @@
 
     <meta
       property="og:image"
-      content="https://pipelightsmax.com/og-pipelightsmax.jpg"
+      content="https://pipelightsmax.com/pipelightsmax-og.jpg"
     />
 
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <meta
       property="og:image:alt"
-      content="PipeLightsMax handcrafted industrial lighting and furniture"
+      content="PipeLightsMax industrial lighting and furniture made from steel pipes and reclaimed wood"
     />
 
     <!-- Twitter / X -->
@@ -58,47 +59,55 @@
 
     <meta
       name="twitter:image"
-      content="https://pipelightsmax.com/og-pipelightsmax.jpg"
+      content="https://pipelightsmax.com/pipelightsmax-og.jpg"
     />
 
     <meta
       name="twitter:image:alt"
-      content="PipeLightsMax handcrafted industrial lighting and furniture"
+      content="PipeLightsMax industrial lighting and furniture made from steel pipes and reclaimed wood"
     />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://pipelightsmax.com/#website",
-        "url": "https://pipelightsmax.com/",
-        "name": "PipeLightsMax",
-        "description": "Handcrafted from steel pipes, reclaimed wood and vintage camera parts.",
-        "publisher": {
-          "@type": "Organization",
-          "@id": "https://pipelightsmax.com/#organization",
-          "name": "PipeLightsMax",
-          "url": "https://pipelightsmax.com/",
-          "description": "Handcrafted from steel pipes, reclaimed wood and vintage camera parts.",
-          "sameAs": ["https://www.instagram.com/maweb_art/"],
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://pipelightsmax.com/logo-light.jpeg"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://pipelightsmax.com/#website",
+            "url": "https://pipelightsmax.com/",
+            "name": "PipeLightsMax",
+            "description": "Handcrafted from steel pipes, reclaimed wood and vintage camera parts.",
+            "publisher": {
+              "@id": "https://pipelightsmax.com/#organization"
+            }
           },
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://pipelightsmax.com/og-pipelightsmax.jpg",
-            "width": 1200,
-            "height": 630
+          {
+            "@type": "Organization",
+            "@id": "https://pipelightsmax.com/#organization",
+            "name": "PipeLightsMax",
+            "url": "https://pipelightsmax.com/",
+            "description": "Handcrafted from steel pipes, reclaimed wood and vintage camera parts.",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://pipelightsmax.com/logo-light.jpeg"
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://pipelightsmax.com/pipelightsmax-og.jpg",
+              "width": 1200,
+              "height": 630
+            },
+            "sameAs": ["https://www.instagram.com/maweb_art/"]
           }
-        }
+        ]
       }
     </script>
   </head>
 
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
