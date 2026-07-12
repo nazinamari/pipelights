@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <div className={css.logo__wrapper}>
       <img className={css.img} src={logo} alt="Logo" />
-      <p className={css.logo}>PipeLights MaxWeb</p>
+      <p className={css.logo}>PipeLightsMax</p>
     </div>
   );
 }

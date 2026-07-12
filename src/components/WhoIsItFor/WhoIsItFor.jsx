@@ -1,3 +1,12 @@
+import Container from '../../shared/components/Container/Container';
+import Section from '../../shared/components/Section/Section';
+
 export default function WhoIsItFor() {
-  return <h1>WhoIsItFor</h1>;
+  return (
+    <Section>
+      <Container>
+        <h1>WhoIsItFor</h1>
+      </Container>
+    </Section>
+  );
 }
