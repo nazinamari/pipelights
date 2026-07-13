@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import css from './Header.module.css';
 import Container from '../../shared/components/Container/Container';
 import Logo from '../Logo/Logo';
+import Icon from '../../shared/components/Icon/Icon';
 
 export default function Header({ onClick, isDesktop }) {
   const menuItems = [
@@ -34,8 +35,13 @@ export default function Header({ onClick, isDesktop }) {
                 onClick();
               }}
               className={css.burger}
+              aria-label="Open navigation menu"
             >
-              ☰
+              <Icon
+                className={css.burgerIcon}
+                id="i-burger"
+                aria-hidden="true"
+              />
             </button>
           )}
         </div>
