@@ -1,24 +1,26 @@
 :root {
+  /* Fonts */
   --nunito: 'Nunito Sans', sans-serif;
   --bebas: 'Bebas Neue', sans-serif;
   --oswald: 'Oswald', sans-serif;
-  --font-weight: 400;
-  --font-size: 40px;
 
-  /* Brand Colours */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Colors */
   --copper: #d26b28;
   --gold: #f2c94c;
 
-  /* Body */
   --main-text: #f0f0f0;
   --alt-text: #1f1f1f;
 
-  /* Neutrals */
   --background: #2b2928;
   --surface: #0f0f0f;
   --alt-surface: #1a1a1a;
 
-  /* States Btn */
+  /* States */
   --primary-hover: #e07934;
   --primary-pressed: #b85a1f;
 
@@ -28,9 +30,4 @@
   --disabled-background: #2e2c2b;
 
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
 }

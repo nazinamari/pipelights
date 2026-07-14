@@ -1,0 +1,166 @@
+/* ====== Mobile — default ======== */
+
+.headingHero {
+  font-family: var(--bebas);
+  font-size: 64px;
+  font-weight: var(--fw-bold);
+  line-height: 80px;
+  letter-spacing: 2px;
+}
+
+.headingSection {
+  font-family: var(--oswald);
+  font-size: 32px;
+  font-weight: var(--fw-medium);
+  line-height: 36px;
+  letter-spacing: 0.01em;
+}
+
+.headingSmall {
+  font-family: var(--nunito);
+  font-size: 24px;
+  font-weight: var(--fw-medium);
+  font-style: italic;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+.logoText {
+  font-family: var(--oswald);
+  font-size: 24px;
+  font-weight: var(--fw-light);
+  line-height: 40px;
+  letter-spacing: 0.01em;
+}
+
+.campaignTitle {
+  font-family: var(--oswald);
+  font-size: 48px;
+  font-weight: var(--fw-medium);
+  line-height: 64px;
+  letter-spacing: 0;
+}
+
+.buttonText {
+  font-family: var(--oswald);
+  font-size: 20px;
+  font-weight: var(--fw-regular);
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+
+.bodyBig {
+  font-family: var(--nunito);
+  font-size: 24px;
+  font-weight: var(--fw-light);
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+.bodyRegular {
+  font-family: var(--nunito);
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.bodySmall {
+  font-family: var(--nunito);
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+/* ========== Tablet ============ */
+
+@media screen and (min-width: 768px) {
+  .headingHero {
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: 3px;
+  }
+
+  .headingSection {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .headingSmall {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .logoText {
+    font-size: 36px;
+    font-weight: var(--fw-regular);
+    line-height: 52px;
+    letter-spacing: 0.02em;
+  }
+
+  .campaignTitle {
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  .buttonText {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .bodyBig {
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  .bodyRegular {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .bodySmall {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+/* ========= Desktop ============ */
+
+@media screen and (min-width: 1280px) {
+  .headingHero {
+    font-size: 128px;
+    line-height: 136px;
+    letter-spacing: 0.03em;
+  }
+
+  .headingSection {
+    font-size: 64px;
+    line-height: normal;
+  }
+
+  .headingSmall {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .campaignTitle {
+    font-size: 128px;
+    line-height: 162px;
+  }
+
+  .buttonText {
+    line-height: normal;
+    letter-spacing: 0.04em;
+  }
+
+  .bodyBig {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .bodyRegular {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
