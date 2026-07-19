@@ -1,102 +1,118 @@
-/* ====== Mobile — default ======== */
+/* ========= Mobile — default ============ */
 
 .headingHero {
   font-family: var(--bebas);
   font-size: 64px;
   font-weight: var(--fw-bold);
   line-height: 80px;
-  letter-spacing: 2px;
+  letter-spacing: 1.92px;
 }
 
 .headingSection {
   font-family: var(--oswald);
   font-size: 32px;
   font-weight: var(--fw-medium);
-  line-height: 36px;
-  letter-spacing: 0.01em;
+  line-height: 48px;
+  letter-spacing: 0.32px;
 }
 
-.headingSmall {
+.headingSubsection {
   font-family: var(--nunito);
-  font-size: 24px;
+  font-size: 28px;
   font-weight: var(--fw-medium);
   font-style: italic;
-  line-height: 32px;
+  line-height: 44px;
   letter-spacing: 0;
 }
 
 .logoText {
   font-family: var(--oswald);
   font-size: 24px;
-  font-weight: var(--fw-light);
+  font-weight: var(--fw-regular);
   line-height: 40px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.48px;
 }
 
 .campaignTitle {
   font-family: var(--oswald);
-  font-size: 48px;
+  font-size: 54px;
   font-weight: var(--fw-medium);
-  line-height: 64px;
+  line-height: 70px;
   letter-spacing: 0;
 }
 
-.buttonText {
-  font-family: var(--oswald);
-  font-size: 20px;
-  font-weight: var(--fw-regular);
-  line-height: 24px;
-  letter-spacing: 4px;
-}
-
-.bodyBig {
+.bodyLarge {
   font-family: var(--nunito);
   font-size: 24px;
-  font-weight: var(--fw-light);
-  line-height: 36px;
+  font-weight: var(--fw-regular);
+  line-height: 40px;
   letter-spacing: 0;
 }
 
 .bodyRegular {
   font-family: var(--nunito);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: var(--fw-regular);
-  line-height: 24px;
+  line-height: 36px;
   letter-spacing: 0;
 }
 
 .bodySmall {
   font-family: var(--nunito);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: var(--fw-regular);
-  line-height: 20px;
+  line-height: 32px;
   letter-spacing: 0;
 }
 
-/* ========== Tablet ============ */
+.buttonText {
+  font-family: var(--oswald);
+  font-size: 24px;
+  font-weight: var(--fw-regular);
+  line-height: 40px;
+  letter-spacing: 1.92px;
+}
+
+.navLink {
+  font-family: var(--nunito);
+  font-size: 24px;
+  font-weight: var(--fw-light);
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+.headingFooter {
+  font-family: var(--oswald);
+  font-size: 40px;
+  font-weight: var(--fw-regular);
+  line-height: 56px;
+  letter-spacing: 0.4px;
+}
+
+/* ========= Tablet ========== */
 
 @media screen and (min-width: 768px) {
   .headingHero {
     font-size: 80px;
     line-height: 96px;
-    letter-spacing: 3px;
+    letter-spacing: 2.4px;
   }
 
   .headingSection {
     font-size: 48px;
     line-height: 64px;
+    letter-spacing: 0.48px;
   }
 
-  .headingSmall {
+  .headingSubsection {
     font-size: 32px;
     line-height: 48px;
   }
 
   .logoText {
-    font-size: 36px;
-    font-weight: var(--fw-regular);
-    line-height: 52px;
-    letter-spacing: 0.02em;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.64px;
   }
 
   .campaignTitle {
@@ -104,57 +120,71 @@
     line-height: 96px;
   }
 
-  .buttonText {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .bodyBig {
+  .bodyLarge {
     font-size: 28px;
     line-height: 44px;
   }
 
   .bodyRegular {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 26px;
+    line-height: 42px;
   }
 
   .bodySmall {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .buttonText {
+    font-size: 28px;
+    line-height: 44px;
+    letter-spacing: 2.24px;
+  }
+
+  .navLink {
+    font-size: 30px;
+    line-height: 46px;
+  }
+
+  .headingFooter {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.48px;
   }
 }
 
-/* ========= Desktop ============ */
+/* ========= Desktop =========== */
 
 @media screen and (min-width: 1280px) {
   .headingHero {
     font-size: 128px;
     line-height: 136px;
-    letter-spacing: 0.03em;
+    letter-spacing: 3.84px;
   }
 
   .headingSection {
     font-size: 64px;
-    line-height: normal;
+    line-height: 80px;
+    letter-spacing: 0.64px;
   }
 
-  .headingSmall {
-    font-size: 40px;
-    line-height: 48px;
+  .headingSubsection {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .logoText {
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0.72px;
   }
 
   .campaignTitle {
-    font-size: 128px;
-    line-height: 162px;
+    font-size: 160px;
+    line-height: 176px;
   }
 
-  .buttonText {
-    line-height: normal;
-    letter-spacing: 0.04em;
-  }
-
-  .bodyBig {
+  .bodyLarge {
     font-size: 40px;
     line-height: 56px;
   }
@@ -162,5 +192,27 @@
   .bodyRegular {
     font-size: 32px;
     line-height: 48px;
+  }
+
+  .bodySmall {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .buttonText {
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 2.56px;
+  }
+
+  .navLink {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .headingFooter {
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.64px;
   }
 }

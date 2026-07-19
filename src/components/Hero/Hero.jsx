@@ -19,7 +19,7 @@ export default function Hero() {
             <Button variant="primary" onClick={handleClick}>
               View our works
             </Button>
-            <p className={clsx('bodyBig', css.heroDescription)}>
+            <p className={clsx('bodyLarge', css.heroDescription)}>
               Handmade lamps and furniture from pipes
               <br />
               or old cameras with Edison bulbs
