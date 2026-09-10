@@ -91,7 +91,7 @@
 
 /* ========= Tablet ========== */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 744px) {
   .headingHero {
     font-size: 80px;
     line-height: 96px;
@@ -155,7 +155,7 @@
 
 /* ========= Desktop =========== */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .headingHero {
     font-size: 128px;
     line-height: 136px;
