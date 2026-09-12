@@ -1,5 +1,5 @@
 :root {
-  /* Fonts */
+  /** Fonts */
   --nunito: 'Nunito Sans', sans-serif;
   --bebas: 'Bebas Neue', sans-serif;
   --oswald: 'Oswald', sans-serif;
@@ -9,25 +9,45 @@
   --fw-medium: 500;
   --fw-bold: 700;
 
-  /* Colors */
-  --copper: #d26b28;
+  /** Colors */
+
+  /* Brand */
   --gold: #f2c94c;
+  --copper: #d26b28;
+  --ember-orange: #e07934;
 
-  --main-text: #f0f0f0;
-  --alt-text: #1f1f1f;
-
+  /* Neutrals */
+  --soft-white: #f0f0f0;
+  --dark-grey: #1f1f1f;
   --background: #2b2928;
   --surface: #0f0f0f;
   --alt-surface: #1a1a1a;
+  --black: #000000;
 
-  /* States */
-  --primary-hover: #e07934;
-  --primary-pressed: #b85a1f;
+  /* Body */
+  --heading-primary-color: var(--gold);
+  --heading-secondary-color: var(--copper);
+  --main-text: var(--soft-white);
+  --alt-text: var(--dark-grey);
 
-  --secondary-pressed: #efbd24;
+  /** Effects */
+  --btn-shadow-color: rgba(94, 45, 13, 0.25);
+  --hover-glow-color: rgba(224, 121, 52, 0.6);
+  --primary-pressed-inner-shadow: rgba(242, 201, 76, 0.8);
+  --secondary-pressed-inner-shadow: rgba(240, 240, 240, 0.8);
+  --card-overlay: rgba(0, 0, 0, 0.15);
 
+  /** States */
+
+  /* Primary */
+  --primary-hover: var(--ember-orange);
+
+  /* Secondary */
+
+  /* Disabled */
   --disabled-text: #888888;
   --disabled-background: #2e2c2b;
 
+  /** Animation */
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

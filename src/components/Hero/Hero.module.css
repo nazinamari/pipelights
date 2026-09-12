@@ -23,7 +23,7 @@
 }
 
 .heroTitle {
-  color: var(--gold);
+  color: var(--heading-primary-color);
   text-transform: uppercase;
 }
 
