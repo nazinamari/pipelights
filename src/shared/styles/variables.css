@@ -31,8 +31,8 @@
   --alt-text: var(--dark-grey);
 
   /** Effects */
-  --btn-shadow-color: rgba(94, 45, 13, 0.25);
-  --hover-glow-color: rgba(224, 121, 52, 0.6);
+  --btn-shadow: rgba(94, 45, 13, 0.25);
+  --hover-glow: rgba(224, 121, 52, 0.6);
   --primary-pressed-inner-shadow: rgba(242, 201, 76, 0.8);
   --secondary-pressed-inner-shadow: rgba(240, 240, 240, 0.8);
   --card-overlay: rgba(0, 0, 0, 0.15);
@@ -41,8 +41,6 @@
 
   /* Primary */
   --primary-hover: var(--ember-orange);
-
-  /* Secondary */
 
   /* Disabled */
   --disabled-text: #888888;
