@@ -10,7 +10,6 @@
   --fw-bold: 700;
 
   /** Colors */
-
   /* Brand */
   --gold: #f2c94c;
   --copper: #d26b28;
@@ -31,14 +30,18 @@
   --alt-text: var(--dark-grey);
 
   /** Effects */
-  --btn-shadow: rgba(94, 45, 13, 0.25);
-  --hover-glow: rgba(224, 121, 52, 0.6);
+  /* Primary */
+  --primary-btn-shadow: rgba(94, 45, 13, 0.25);
+  --primary-hover-glow: rgba(224, 121, 52, 0.6);
   --primary-pressed-inner-shadow: rgba(242, 201, 76, 0.8);
+
+  /* Second */
+  --secondary-hover-glow: rgba(242, 201, 76, 0.25);
   --secondary-pressed-inner-shadow: rgba(240, 240, 240, 0.8);
+
   --card-overlay: rgba(0, 0, 0, 0.15);
 
   /** States */
-
   /* Primary */
   --primary-hover: var(--ember-orange);
 
