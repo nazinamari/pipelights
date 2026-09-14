@@ -1,4 +1,4 @@
-import logo from '/src/components/Logo/img/logo.jpg';
+import logo from '/src/components/Logo/img/logo.png';
 import css from './Logo.module.css';
 
 export default function Logo() {
