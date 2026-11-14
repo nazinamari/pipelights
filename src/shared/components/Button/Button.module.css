@@ -1,125 +1,54 @@
 .btn {
-  padding: 18px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
   border: none;
   border-radius: 8px;
-  /* display: inline-block;
-  text-align: center; */
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
+
   cursor: pointer;
-  /* text-transform: uppercase; */
-  text-transform: capitalize;
   white-space: nowrap;
 
-  /* box-shadow: 0 4px 8px 0 rgba(94, 45, 13, 0.25); */
-
-  transition: background-color var(--transition);
+  transition:
+    background-color var(--transition),
+    box-shadow var(--transition);
 }
 
-/* Primary */
+/* Mobile */
+.btn-primary,
+.btn-secondary {
+  min-width: 222px;
+  padding: 10px 16px;
+}
+
+/* Tablet */
+@media (min-width: 744px) {
+  .btn-primary,
+  .btn-secondary {
+    min-width: 248px;
+    padding: 14px 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .btn-primary,
+  .btn-secondary {
+    min-width: 306px;
+    padding: 14px 32px;
+  }
+}
+
+/* Primary — Default */
 .btn-primary {
-  background-color: var(--copper);
   color: var(--main-text);
-  box-shadow: 0 4px 8px 0 rgba(94, 45, 13, 0.25);
+  background: var(--copper);
+  box-shadow: 0 4px 8px 0 var(--primary-btn-shadow);
 }
+
+/* Primary — Hover */
 .btn-primary:enabled:hover {
-  background-color: var(--primary-hover);
-  box-shadow: 0 0 16px 0 var(--primary-hover);
+  background: var(--primary-hover);
+  box-shadow: 0 4px 16px 2px var(--primary-hover-glow);
 }
-.btn-primary:enabled:active {
-  background-color: var(--primary-pressed);
-  box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.4);
-}
-.btn-primary:focus-visible {
-  outline: none;
-  border: 2px solid var(--main-text);
-  box-shadow:
-    0 4px 8px 0 rgba(94, 45, 13, 0.25),
-    inset 0 0 0 4px var(--main-text);
-}
-.btn-primary.active {
-  background-color: var(--copper);
-  box-shadow:
-    0 4px 8px 0 rgba(94, 45, 13, 0.25),
-    inset 0 4px 20px 4px var(--primary-pressed);
-}
-.btn-primary:disabled {
-  color: var(--disabled-text);
-  background-color: var(--disabled-background);
-  cursor: not-allowed;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-}
-
-/* Default */
-/* .btn-secondary {
-  border: 2px solid var(--gold);
-  background-color: transparent;
-  color: var(--gold);
-  box-shadow: 0 4px 8px 0 rgba(94, 45, 13, 0.25);
-}
-.btn-secondary:enabled:hover {
-  background-color: var(--);
-  box-shadow:
-    0 4px 20px 0 rgba(224, 121, 52, 0.25),
-    inset 0 4px 20px 0 rgba(224, 121, 52, 0.1);
-}
-.btn-secondary:enabled:active {
-  background-color: var(--secondary-pressed);
-  box-shadow: 0 4px 8px 0 rgba(94, 45, 13, 0.25);
-  border-color: var(--secondary-pressed);
-}
-.btn-secondary:focus-visible {
-  outline: none;
-  border: 2px solid var(--main-text);
-  background-color: var(--btn-deflt-focused);
-  box-shadow:
-    0 4px 8px 0 rgba(94, 45, 13, 0.25),
-    inset 0 4px 20px 0 rgba(224, 121, 52, 0.4);
-}
-.btn-default.active {
-  background-color: transparent;
-  color: var(--btn-deflt-active);
-  box-shadow:
-    0 4px 8px 0 rgba(94, 45, 13, 0.25),
-    inset 0 4px 20px 2px rgba(224, 121, 52, 0.25);
-}
-.btn-secondary:disabled {
-  border: 2px solid var(--btn-disabled-light);
-  background-color: transparent;
-  color: var(--btn-disabled-light);
-  cursor: not-allowed;
-} */
-
-/* Link */
-/* .btn-link {
-  background-color: transparent;
-  color: var(--btn-link-reset);
-  text-decoration: underline;
-}
-.btn-link:enabled:hover {
-  color: var(--btn-link-hover);
-  text-decoration: underline;
-}
-.btn-link:enabled:active {
-  color: var(--btn-link-pressed);
-  text-decoration: underline;
-}
-.btn-link:focus-visible {
-  outline: none;
-  border: 2px solid var(--main-text);
-  text-decoration: underline;
-  box-shadow: 0 4px 12px 0 rgba(210, 107, 40, 0.4);
-}
-.btn-link.active {
-  color: var(--btn-link-active);
-  text-decoration: underline;
-  box-shadow: inset 0 0 10px 10px rgba(210, 107, 40, 0.1);
-}
-.btn-link:disabled {
-  color: var(--btn-disabled-light);
-  cursor: not-allowed;
-  text-decoration: underline;
-} */

@@ -1,20 +1,26 @@
+import clsx from 'clsx';
 import css from './Button.module.css';
 
 export default function Button({
   children,
-  variant = 'primary', // primary | secondary | link
-  type = 'button', // button | submit | reset
+  variant = 'primary',
+  type = 'button',
   disabled = false,
-  active = false,
+  selected = false,
   onClick,
-  className = '',
+  className,
 }) {
-  // формуємо клас за variant + active
-  const classNames = `${css.btn} ${css[`btn-${variant}`]} ${active ? css.active : ''} ${className}`;
-
   return (
     <button
-      className={classNames}
+      className={clsx(
+        'buttonText',
+        css.btn,
+        css[`btn-${variant}`],
+        {
+          [css.selected]: selected,
+        },
+        className
+      )}
       type={type}
       disabled={disabled}
       onClick={onClick}
