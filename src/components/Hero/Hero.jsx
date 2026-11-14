@@ -16,7 +16,7 @@ export default function Hero() {
             HANDCRAFTED LAMPS & FURNITURE
           </h1>
           <div className={css.heroInfo}>
-            <Button variant="primary" disabled onClick={handleClick}>
+            <Button variant="primary" onClick={handleClick}>
               View our works
             </Button>
             <p className={clsx('bodyLarge', css.heroDescription)}>
