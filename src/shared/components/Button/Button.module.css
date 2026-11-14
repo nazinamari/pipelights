@@ -12,7 +12,8 @@
 
   transition:
     background-color var(--transition),
-    box-shadow var(--transition);
+    box-shadow var(--transition),
+    transform var(--transition);
 }
 
 /* Mobile */
@@ -50,12 +51,37 @@
 /* Primary — Hover */
 .btn-primary:enabled:hover {
   background: var(--primary-hover);
-  box-shadow: 0 4px 16px 2px var(--primary-hover-glow);
+  box-shadow: var(--btn-outer-glow) var(--primary-hover-glow);
 }
 
 /* Primary — Pressed */
 .btn-primary:enabled:active {
   background: var(--primary-hover);
-  box-shadow: inset 0 2px 20px 0 var(--primary-pressed-inner-shadow);
+  box-shadow:
+    var(--btn-outer-glow) var(--primary-hover-glow),
+    var(--btn-inner-glow) var(--primary-pressed-inner-shadow);
   transform: scaleX(0.97);
+}
+
+/* Primary — Focus */
+.btn-primary:focus-visible {
+  outline: 2px solid var(--soft-white);
+  outline-offset: -2px;
+  background: var(--copper);
+}
+
+/* Primary — Selected */
+.btn-primary.selected:enabled {
+  background: var(--primary-hover);
+  box-shadow:
+    var(--btn-outer-glow) var(--primary-hover-glow),
+    var(--btn-inner-glow) var(--primary-pressed-inner-shadow);
+}
+
+/* Primary — Disabled */
+.btn-primary:disabled {
+  color: var(--disabled-text);
+  background: var(--disabled-background);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
 }
