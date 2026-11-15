@@ -4,10 +4,6 @@ import css from './Hero.module.css';
 import clsx from 'clsx';
 
 export default function Hero() {
-  const handleClick = () => {
-    console.log('Primary button clicked!');
-  };
-
   return (
     <section className={css.hero}>
       <Container>
@@ -16,9 +12,7 @@ export default function Hero() {
             HANDCRAFTED LAMPS & FURNITURE
           </h1>
           <div className={css.heroInfo}>
-            <Button variant="primary" onClick={handleClick}>
-              View our works
-            </Button>
+            <Button variant="primary">View our works</Button>
             <p className={clsx('bodyLarge', css.heroDescription)}>
               Handmade lamps and furniture from pipes
               <br />

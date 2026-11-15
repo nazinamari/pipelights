@@ -32,12 +32,14 @@
 
   /** Effects */
 
-  /* Shared button shadow geometry */
+  /* Shared shadows */
+  --shadow-soft: 0 4px 8px 0 rgba(94, 45, 13, 0.25);
+
+  /* Shared button glow */
   --btn-outer-glow: 0 4px 16px 2px;
   --btn-inner-glow: inset 0 4px 20px 4px;
 
   /* Primary shadow colors */
-  --primary-btn-shadow: rgba(94, 45, 13, 0.25);
   --primary-hover-glow: rgba(224, 121, 52, 0.6);
   --primary-pressed-inner-shadow: rgba(242, 201, 76, 0.8);
 

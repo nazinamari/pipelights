@@ -9,18 +9,27 @@ export default function Button({
   selected = false,
   onClick,
   className,
+  href,
 }) {
+  const classNames = clsx(
+    'buttonText',
+    css.btn,
+    css[`btn-${variant}`],
+    { [css.selected]: selected },
+    className
+  );
+
+  if (href) {
+    return (
+      <a href={href} className={classNames} onClick={onClick}>
+        {children}
+      </a>
+    );
+  }
+
   return (
     <button
-      className={clsx(
-        'buttonText',
-        css.btn,
-        css[`btn-${variant}`],
-        {
-          [css.selected]: selected,
-        },
-        className
-      )}
+      className={classNames}
       type={type}
       disabled={disabled}
       onClick={onClick}
