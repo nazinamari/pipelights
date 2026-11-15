@@ -1,3 +1,7 @@
 export default function AboutMaker() {
-  return <h1>AboutMaker</h1>;
+  return (
+    <>
+      <h2 className="headingSection">About the maker</h2>
+    </>
+  );
 }

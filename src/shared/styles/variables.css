@@ -35,7 +35,7 @@
   /* Shared shadows */
   --shadow-soft: 0 4px 8px 0 rgba(94, 45, 13, 0.25);
 
-  /* Shared button glow */
+  /* Shared button glow*/
   --btn-outer-glow: 0 4px 16px 2px;
   --btn-inner-glow: inset 0 4px 20px 4px;
 

@@ -1,3 +1,7 @@
 export default function BestSellers() {
-  return <h1>BestSellers</h1>;
+  return (
+    <>
+      <h2 className="headingSection">BestSellers</h2>
+    </>
+  );
 }

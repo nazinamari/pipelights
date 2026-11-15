@@ -1,3 +1,7 @@
 export default function PhotoGallery() {
-  return <h1>PhotoGallery</h1>;
+  return (
+    <>
+      <h2 className="headingSection">PhotoGallery</h2>
+    </>
+  );
 }

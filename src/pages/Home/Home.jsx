@@ -1,6 +1,6 @@
 import AboutMaker from '../../components/AboutMaker/AboutMaker';
 import BestSellers from '../../components/BestSellers/BestSellers';
-import Compain from '../../components/Compain/Compain';
+import Compaign from '../../components/Compaign/Compaign';
 import Hero from '../../components/Hero/Hero';
 import NewProductsSlider from '../../components/NewProductsSlider/NewProductsSlider';
 import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
@@ -16,7 +16,7 @@ export default function Home() {
       <AboutMaker />
       <Reviews />
       <BestSellers />
-      <Compain />
+      <Compaign />
       <PhotoGallery />
     </>
   );

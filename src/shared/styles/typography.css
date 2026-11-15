@@ -14,6 +14,10 @@
   font-weight: var(--fw-medium);
   line-height: 48px;
   letter-spacing: 0.32px;
+
+  color: var(--heading-secondary-color);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .headingSubsection {

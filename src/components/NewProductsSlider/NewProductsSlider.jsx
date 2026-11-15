@@ -1,3 +1,7 @@
 export default function NewProductsSlider() {
-  return <h1>NewProductsSlider</h1>;
+  return (
+    <>
+      <h2 className="headingSection">NewProductsSlider</h2>
+    </>
+  );
 }
