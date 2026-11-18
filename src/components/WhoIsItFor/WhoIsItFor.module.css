@@ -1,3 +1,9 @@
+.list,
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   padding: 16px;
   border-radius: 8px;
@@ -13,4 +19,37 @@
   box-shadow:
     inset 1px 1px 0 rgba(255, 255, 255, 0.2),
     inset -1px -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.picture {
+  display: block;
+}
+
+.picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  text-align: center;
+}
+
+@media (min-width: 744px) {
+  .list,
+  .content {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .card,
+  .picture,
+  .description {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .description {
+    text-align: left;
+  }
 }
