@@ -1,3 +1,5 @@
+// import * as images from './img';
+
 export default function NewProductsSlider() {
   return (
     <>
