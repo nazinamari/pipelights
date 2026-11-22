@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "product1",
+    "image2x": "product1_2x",
+    "imageTablet": "product1Tablet",
+    "imageTablet2x": "product1Tablet_2x",
+    "imageMobile": "product1Mobile",
+    "alt": "Handcrafted pipe lamp with a round Edison bulb"
+  },
+  {
+    "id": 2,
+    "image": "product2",
+    "image2x": "product2_2x",
+    "imageTablet": "product2Tablet",
+    "imageTablet2x": "product2Tablet_2x",
+    "imageMobile": "product2Mobile",
+    "alt": "Handcrafted pipe lamp with three Edison bulbs"
+  },
+  {
+    "id": 3,
+    "image": "product3",
+    "image2x": "product3_2x",
+    "imageTablet": "product3Tablet",
+    "imageTablet2x": "product3Tablet_2x",
+    "imageMobile": "product3Mobile",
+    "alt": "Edison bulb mounted on a pipe fitting"
+  },
+  {
+    "id": 4,
+    "image": "product4",
+    "image2x": "product4_2x",
+    "imageTablet": "product4Tablet",
+    "imageTablet2x": "product4Tablet_2x",
+    "imageMobile": "product4Mobile",
+    "alt": "Handcrafted lamp made from a vintage telephone"
+  }
+]
