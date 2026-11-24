@@ -16,39 +16,42 @@ export default function Slider({ data, component: Component }) {
   };
 
   return (
-    <Swiper
-      grabCursor
-      slidesPerView={1.1}
-      spaceBetween={16}
-      breakpoints={{
-        744: {
-          slidesPerView: 2,
-          spaceBetween: 24,
-        },
-        1440: {
-          slidesPerView: 3,
-          spaceBetween: 24,
-        },
-        1920: {
-          slidesPerView: 4,
-          spaceBetween: 24,
-        },
-      }}
-      watchOverflow
-      onSwiper={(swiper) => {
-        swiperRef.current = swiper;
-        updateNavigation(swiper);
-      }}
-      onSlideChange={updateNavigation}
-      onUpdate={updateNavigation}
-      onLock={updateNavigation}
-      onUnlock={updateNavigation}
-    >
-      {data.map((item) => (
-        <SwiperSlide key={item.id}>
-          <Component {...item} />
-        </SwiperSlide>
-      ))}
+    <>
+      <Swiper
+        grabCursor
+        slidesPerView={1.1}
+        spaceBetween={16}
+        breakpoints={{
+          744: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          1920: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+          },
+        }}
+        watchOverflow
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+          updateNavigation(swiper);
+        }}
+        onSlideChange={updateNavigation}
+        onUpdate={updateNavigation}
+        onLock={updateNavigation}
+        onUnlock={updateNavigation}
+      >
+        {data.map((item) => (
+          <SwiperSlide key={item.id}>
+            <Component {...item} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
       <div className={css.controls}>
         <button
           type="button"
@@ -63,13 +66,13 @@ export default function Slider({ data, component: Component }) {
         <button
           type="button"
           className={css.arrow}
+          disabled={isNextDisabled}
           onClick={() => swiperRef.current?.slideNext()}
           aria-label="Next slide"
-          disabled={isNextDisabled}
         >
-          <Icon id="i-arrow-right" width={24} height={24} />
+          <Icon id="i-arrow-right" width={24} height={24} aria-hidden="true" />
         </button>
       </div>
-    </Swiper>
+    </>
   );
 }
