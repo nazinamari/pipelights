@@ -1,0 +1,38 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+
+  color: var(--soft-white);
+  background: var(--copper);
+  cursor: pointer;
+}
+
+.arrow svg {
+  fill: none;
+  stroke: currentColor;
+}
+
+.arrow:focus-visible {
+  outline: 2px solid var(--soft-white);
+  outline-offset: 4px;
+}
+
+.arrow:disabled {
+  color: var(--disabled-text);
+  background: var(--disabled-background);
+  cursor: not-allowed;
+}
